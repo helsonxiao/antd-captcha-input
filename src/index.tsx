@@ -121,7 +121,7 @@ export const CaptchaInput = forwardRef<
             {...btnProps}
             ref={btnRef}
             loading={sending || btnProps?.loading}
-            disabled={countdownLeft !== 0 || props?.disabled}
+            disabled={countdownLeft !== 0 || btnProps?.disabled}
             onClick={(e) => handleClick(e)}
           >
             {countdownLeft === 0 ? '获取验证码' : `重新发送(${countdownLeft}s)`}
