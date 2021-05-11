@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { Button, message } from 'antd';
+import { Button, Form, message } from 'antd';
 import { CaptchaInput, CaptchaInputAttributes } from 'antd-captcha-input';
 import 'antd/dist/antd.css';
 
@@ -32,6 +32,18 @@ function App() {
         <Button onClick={() => captchaInputRef.current?.send()}>
           通过 ref 获取验证码
         </Button>
+        <p />
+        <Form onValuesChange={(changed) => console.log(changed)}>
+          <Form.Item name="captchaInput">
+            <CaptchaInput
+              ref={captchaInputRef}
+              countdown={COUNTDOWN}
+              onSend={onSend}
+              onSendLimit={(left) => message.warn(`还剩 ${left} 秒，别急啊！`)}
+              onSendError={(err) => message.warn(err)}
+            />
+          </Form.Item>
+        </Form>
       </div>
     </div>
   );
