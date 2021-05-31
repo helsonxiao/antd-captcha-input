@@ -2,16 +2,16 @@
 
 Captcha input component as standard Ant.Design form item.
 
-[![dumi](https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square)](https://github.com/umijs/dumi) [![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url]
+[![dumi][dumi-image]][dumi-url] [![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url]
 
+[dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
+[dumi-url]: https://github.com/umijs/dumi
 [npm-image]: https://img.shields.io/npm/v/antd-captcha-input.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/antd-captcha-input
 [download-image]: https://img.shields.io/npm/dm/antd-captcha-input.svg?style=flat-square
 [download-url]: https://npmjs.org/package/antd-captcha-input
 [github-actions-image]: https://github.com/helsonxiao/antd-captcha-input/workflows/CI/badge.svg
 [github-actions-url]: https://github.com/helsonxiao/antd-captcha-input/actions
-
-<!-- ![Preview](https://staticcdn.boyuai.com/user-assets/6074/DvBU2V96oXmxMQ45rrnKUb/2021416-171631.png!png) -->
 
 ## Installation
 
@@ -23,30 +23,22 @@ or
 yarn add antd-captcha-input
 ```
 
-<!-- ## Usage -->
+## Usage
 
-<!-- ```tsx | pure
-import CountryPhoneInput, { ConfigProvider } from 'antd-captcha-input';
-import en from 'world_countries_lists/data/en/world.json';
-
-// Usually you only need to import ConfigProvider & CSS once in App.js/App.tsx
-// CSS order is important!
-import 'antd/dist/antd.css';
-import 'antd-captcha-input/dist/index.css';
+```tsx | pure
+import { CaptchaInput } from 'antd-captcha-input';
 
 const App = () => {
   return (
-    <ConfigProvider locale={en}>
-      <CountryPhoneInput />
-    </ConfigProvider>
+    <CaptchaInput />
   );
 };
 
 export default App;
-``` -->
+```
+
+Try it on website: https://helsonxiao.github.io/antd-captcha-input/demos/
 
 ### Example
 
-Have a look at [this](./example)!
-
-<!-- Online Demo -->
+Have a look at [this](https://github.com/helsonxiao/antd-captcha-input/tree/master/example)!
